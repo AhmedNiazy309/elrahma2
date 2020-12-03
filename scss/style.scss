@@ -3,6 +3,9 @@ $secondColor:#C4C4C4;
 $thirdColor:#dcdcdc;
 $forthcolor: #B1B0B0;
 $mainfont : 'Tajawal', sans-serif;
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
 *{
     font-family: $mainfont !important;
     font-weight: 700 !important;

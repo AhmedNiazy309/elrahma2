@@ -55,11 +55,15 @@ $('.delete-button').click(function () {
   selectedRow = $(this).closest('tr');
   idSelectedRow = $(this).closest('tr').find(".hide_column").text();
 });
-/*$(document).ready(function() {
-    $('table.display').DataTable({
-            "paging":   false,
-    "ordering": false,
-    "info":     false,
-    "scrollX": true
-    });
-} );*/
+var mybutton = document.getElementById("eye"),
+    myin = document.getElementById("show");
+
+mybutton.onclick = function () {
+  "use strict";
+
+  if (this.textContent === "show password") {
+    myin.setAttribute("type", "text");
+  } else {
+    myin.setAttribute("type", "password");
+  }
+};

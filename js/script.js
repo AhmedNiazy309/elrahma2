@@ -62,12 +62,14 @@ var table = $('#example').DataTable({
       idSelectedRow = $(this).closest('tr').find(".hide_column").text();
   
 });
+var mybutton = document.getElementById("eye"),
+myin=document.getElementById("show");
+mybutton.onclick=function(){
+    "use strict";
+    if(this.textContent==="show password"){
+      myin.setAttribute("type","text");
+    }else{
+        myin.setAttribute("type","password");  
 
-/*$(document).ready(function() {
-    $('table.display').DataTable({
-            "paging":   false,
-    "ordering": false,
-    "info":     false,
-    "scrollX": true
-    });
-} );*/
+    }
+};
