@@ -81,6 +81,14 @@ a:hover{
         font-size: 25px;
         text-decoration: none;
         }    
+        .show_hide{
+    margin-right: -2rem;
+    display: inline;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+        }
 }
 .import{
     background-color: $mainColor;

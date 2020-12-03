@@ -55,15 +55,15 @@ $('.delete-button').click(function () {
   selectedRow = $(this).closest('tr');
   idSelectedRow = $(this).closest('tr').find(".hide_column").text();
 });
-var mybutton = document.getElementById("eye"),
-    myin = document.getElementById("show");
+$(".show_hide").click(function (e) {
+  e.preventDefault();
+  $(this).toggleClass("active");
 
-mybutton.onclick = function () {
-  "use strict";
-
-  if (this.textContent === "show password") {
-    myin.setAttribute("type", "text");
+  if ($(this).hasClass("active")) {
+    $(".txt").attr("type", "text");
+    $(".show_hide").addClass("fa-eye-slash").removeClass("fa-eye");
   } else {
-    myin.setAttribute("type", "password");
+    $(".txt").attr("type", "password");
+    $(".show_hide").addClass("fa-eye").removeClass("fa-eye-slash");
   }
-};
+});
